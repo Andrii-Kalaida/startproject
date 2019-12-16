@@ -1,0 +1,84 @@
+.header-section {
+position: relative;
+width: 100%;
+height: 163px;
+display: flex;
+border: 1px solid red;
+
+    .logotype{
+    position: relative;
+    width: 100%;
+    text-align: left;
+        .logo {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        }
+
+        .name {
+        text-transform: uppercase;
+        color: #1AB0CE;
+        font-size: 48px;
+        line-height: 56px;
+        margin-left: 200px;
+        padding-top: 15px;
+        }
+
+        .typography {
+        margin-left: 200px;
+        
+        }
+    }
+
+    .content {
+    font-family: Clear Sans;
+    position: absolute;
+    text-align: center;
+    left: 33%;
+        .description {
+        width: 375px;
+        height: 42px;
+        margin-top: 17px;
+        font-size: 16px;
+        line-height: 19px;
+        }
+
+        .schedule {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 40px;
+        width: auto;
+        height: 17px;
+        color: #3A4047;
+        }
+    }
+
+    .contacts {
+
+        .cart{
+
+        }
+
+        .user {
+
+        }
+
+        .facebook {
+
+        }
+
+        .telephone {
+
+        }
+
+        .office {
+        position: absolute;
+        left: 60%;
+        top: 10%;
+        }
+
+        .mail {
+
+        }
+    }
+}

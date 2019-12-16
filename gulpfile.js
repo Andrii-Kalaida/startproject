@@ -74,7 +74,7 @@ gulp.task('clean', function () {
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('styles'));
   gulp.watch('app/js/index.js', gulp.parallel('script'));
-  gulp.watch(['app/index.html', 'app/htmlChunks/**/*.html'], gulp.series('html', 'svg-loader'));
+  gulp.watch(['app/index.html', 'app/templates/**/*.html'], gulp.series('html', 'svg-loader'));
   gulp.watch('app/images/**', gulp.parallel('copy'));
   gulp.watch('app/fonts/**', gulp.parallel('copyFonts'));
 })

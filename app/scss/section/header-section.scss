@@ -9,10 +9,11 @@ border: 1px solid red;
     position: relative;
     width: 100%;
     text-align: left;
+
         .logo {
         position: absolute;
-        left: 10%;
-        top: 10%;
+        left: 6%;
+        top: 15%;
         }
 
         .name {
@@ -20,12 +21,12 @@ border: 1px solid red;
         color: #1AB0CE;
         font-size: 48px;
         line-height: 56px;
-        margin-left: 200px;
+        margin-left: 11%;
         padding-top: 15px;
         }
 
         .typography {
-        margin-left: 200px;
+        margin-left: 11%;
         
         }
     }
@@ -34,7 +35,7 @@ border: 1px solid red;
     font-family: Clear Sans;
     position: absolute;
     text-align: center;
-    left: 33%;
+    left: 28%;
         .description {
         width: 375px;
         height: 42px;
@@ -54,31 +55,43 @@ border: 1px solid red;
     }
 
     .contacts {
-
+    color: #3a4047;
         .cart{
-
+        position: absolute;
+        left: 89%;
+        top: 15%;
         }
 
         .user {
-
+        position: absolute;
+        left: 58.5%;
+        top: 15%;
         }
 
         .facebook {
-
+        position: absolute;
+        top: 56%;
+        left: 69%;
         }
 
         .telephone {
-
+        position: absolute;
+        top: 56%;
+        left: 72%;
         }
 
         .office {
         position: absolute;
         left: 60%;
-        top: 10%;
+        top: 15%;
+        text-decoration-line: underline;
         }
 
         .mail {
-
+        position: absolute;
+        left: 75%;
+        top: 15%;
+        text-decoration-line: underline;
         }
     }
 }

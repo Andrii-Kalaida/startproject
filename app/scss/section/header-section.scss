@@ -4,7 +4,15 @@ width: 100%;
 height: 163px;
 display: flex;
 border: 1px solid red;
+    .container {
+    position: absolute;
+    display: flex;
+    align-content: flex-end;
 
+        .nav {
+        
+        }
+    }
     .logotype{
     position: relative;
     width: 100%;

@@ -20,7 +20,7 @@ gulp.task('svg-loader', async function () {
   gulp.src('./app/temp/index.html')
     .pipe(svgLoader({
       root: './app/images',
-      selector: '.to-inline-svg'
+      selectors: ['.to-inline-svg']
     }))
     .pipe(gulp.dest('public/'))
 });

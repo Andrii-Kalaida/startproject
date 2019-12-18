@@ -5,10 +5,14 @@ height: 163px;
 
 
     .container {
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
     
         .nav {
         position: absolute;
-        top: 140px;
+        top: 130px;
+        
         }
     }
 

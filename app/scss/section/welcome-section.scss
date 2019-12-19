@@ -2,4 +2,33 @@
 width: 100%;
 height: 500px;
 background: url('./images/rectangle.jpg') center / cover no-repeat;
+
+    .title {
+    text-align: end;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    top: 316px;
+    font-size: 47px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+    .description {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 240px;
+    color: #FFFFFF;
+    }
+
+    .button {
+    position: absolute;
+    top: 510px;
+    
+    background: #1AB0CE;
+    border-radius: 2px;
+    }
 }

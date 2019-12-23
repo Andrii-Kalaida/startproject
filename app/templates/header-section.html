@@ -1,37 +1,47 @@
 <header class="header-section">
-    <div class="container">
-        <nav class="navigation">
-            <a href="#" class="head">Главная</a>
-            <a href="#" class="product">Продукция</a>
-            <a href="#" class="delivery">Доставка и оплата</a>
-            <a href="#" class="news">Новости</a>
-            <a href="#" class="base">База знаний</a>
-            <a href="#" class="about">О нас</a>
-            <a href="#" class="contact">Контакты</a>
-        </nav>    
-        <div class="search">
-            <form >
-                <input type="text" placeholder="Поиск">
-                <button class="button" type="submit"></button>
-            </form>
-        </div>
+
+  <div class="brand">
+    <div class="logo">
+      <h2 class="name">Printe</h2>
+      <p class="typography">Ваша типография</p>
     </div>
-    <div class="logotype">
-        <img src="images/logo-shop.svg" alt="logo" class="logo">
-        <h1 class="name">Printe</h1>
-        <p class="typography">Ваша типография</p>
-    </div>
-    <div class="content">
-        <p class="description">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
-        <p class="schedule">Работаем с 9 до 18, вс и сб выходные</p>
+    <div class="text">
+      <p class="description">
+        Качественная оперативная цифровая,<br>
+        широкоформатная и сувенирная полиграфия!</p>
+      <p class="description -schedule">Работаем с 9 до 18, вс и сб выходные</p>
     </div>
     <div class="contacts">
-        <img src="images/shopping-cart.svg" alt="cart" class="cart">
-        <img src="images/user.svg" alt="user" class="user">
-        <img src="images/facebook.svg" alt="facebook" class="facebook">
-        <img src="images/telephone.svg" alt="telephone" class="telephone">
-        <p class="office">Личный кабинет</p>
-        <p class="mail">maket@test-vertka.ua</p>
-        
+      <div class="row">
+        <button class="manage button js-manage">Личный кабинет</button>
+        <a href="mailto:maket@test-vertka.ua" class="mail button">maket@test-vertka.ua</a>
+      </div>
+      <div class="row -right">
+        <a class="social" href="#"></a>
+        <div class="phone">
+          <a class="number" href="tel:+0443454042">(044) 345-40-42</a>
+          <button class="arrow"></button>
+          <div class="list">
+            <a class="number -vodafone" href="tel:+0443454042">(044) 345-40-42</a>
+            <a class="number -kyivstar" href="tel:+0443454042">(044) 345-40-42</a>
+            <a class="number -life" href="tel:+0443454042">(044) 345-40-42</a>
+          </div>
+        </div>
+      </div>
     </div>
+    <button class="shop js-baket">
+      <div class="count js-count">3</div>
+    </button>
+  </div>
+
+  <nav class="navigation">
+    <a href="#" class="item">Главная</a>
+    <a href="#" class="item">Продукция</a>
+    <a href="#" class="item">Доставка и оплата</a>
+    <a href="#" class="item">Новости</a>
+    <a href="#" class="item">База знаний</a>
+    <a href="#" class="item">О нас</a>
+    <a href="#" class="item">Контакты</a>
+    <button class="item search"> search icon </button>
+  </nav>
 </header>

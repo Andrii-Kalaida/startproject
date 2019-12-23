@@ -1,147 +1,315 @@
 .header-section {
-position: relative;
-width: 100%;
-height: 163px;
+  position: relative;
+  width: 100%;
+  height: 163px;
+  padding: 0 60px;
+  box-sizing: border-box;
 
-
-    .container {
+  & > .brand {
     width: 100%;
-    height: 50px;
-    
-        .navigation {
-        position: absolute;
-        top: 130px;
-        margin-left: 130px;
-        text-transform: uppercase;
-        
-            .product {
-            margin-left: 50px;
-            
-            }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0 12px;
 
-            .delivery {
-            margin-left: 50px;
-            }
+    & > .logo {
+      padding-left: 77px;
+      height: 62px;
+      background: url('../images/logo-shop.svg') 0 0 / 67px 62px no-repeat;
 
-            .news {
-            margin-left: 50px;
-            }
-
-            .base {
-            margin-left: 50px;
-            }
-
-            .about {
-            margin-left: 50px;
-            margin-right: 50px;
-            }
-        }
-
-        .search {
-        position: absolute;
-        top: 120px;
-        right: 100px;
- 
-            .button {
-            width: 20px;
-            height: 20px;
-            
-            }
-        }
-    }
-
-    .logotype {
-    color: #3A4047;
-
-        .logo {
-        position: absolute;
-        top: 25px;
-        left: 133px;
-        }
-
-        .name {
-        position: absolute;
-        top: 20px;
-        left: 209px;
-        text-transform: uppercase;
+      & > .name {
         font-size: 48px;
-        line-height: 56px;
-        color: #1AB0CE;
-        }
+        line-height: 48px;
+        color: #1ab0ce;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
 
-        .typography {
-        position: absolute;
-        top: 65px;
-        left: 212px;
-        }
+      & > .description {
+        font-size: 15px;
+        line-height: 18px;
+        color: #3a4047;
+      }
     }
 
-    .content {
-    text-align: center;
-    width: 391px;
-    position: absolute;
-    top: 30px;
-    left: 421px;
-    
-        .description {
+    & > .text {
+      margin: 0 50px 0 64px;
+      text-align: center;
+      color: #3a4047;
+
+      & > .description {
         font-size: 16px;
         line-height: 19px;
+        margin: 0;
 
+        &.-schedule {
+          margin-top: 9px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    & > .contacts {
+      & > .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.-right {
+          justify-content: flex-end;
+          margin-top: 20px;
         }
 
-        .schedule {
-        margin-top: 10px;
+        & > .button {
+          color: #3a4047;
+          text-decoration: underline;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: normal;
+        }
+
+        & > .manage {
+          background: transparent;
+          padding-left: 20px;
+          background: url('../images/user.svg') 0 center / 11px 13px no-repeat;
+          border: none;
+        }
+
+        & > .mail {
+          margin-left: 30px;
+        }
+
+        & > .social {
+          width: 20px;
+          height: 20px;
+          background: url('../images/facebook.svg') center / 11px 20px no-repeat;
+        }
+
+        & > .phone {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & > .number {
+            margin-left: 20px;
+            padding-left: 30px;
+            background: url('../images/telephone.svg') 0 center / 20px no-repeat;
+            font-size: 16px;
+            line-height: 19px;
+            color: #3a4047;
+            font-weight: bold;
+          }
+
+          & > .arrow {
+            width: 20px;
+            height: 20px;
+            margin-left: 6px;
+            border-radius: 50%;
+            background: #ededed url('../images/chevron-right.svg') center / 8px 4px no-repeat;
+            position: relative;
+            border: none;
+          }
+
+          & > .list {
+            display: none;
+          }
+        }
+      }
+    }
+
+    & > .shop {
+      width: 64px;
+      height: 52px;
+      background: url('../images/shopping-cart.svg') left bottom / 44px no-repeat;
+      border: none;
+      position: relative;
+
+      & > .count {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background: #1ab0ce;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
         font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
 
-    .contacts {
-    color: #3a4047;
-    
-        .cart {
-        position: absolute;
-        right: 51px;
-        top: 36px;
-        }
+  .navigation {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        .user {
-            position: absolute;
-            left: 860px;
-            top: 40px;
-        }
+    & > .item {
+      height: 100%;
+      flex-grow: 1;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3a4047;
+      text-decoration: none;
 
-        .facebook {
-            position: absolute;
-            right: 340px;
-            top: 80px;
-        }
-
-        .telephone {
-            position: absolute;
-            right: 300px;
-            top: 80px;
-        }
-
-        .office {
-        position: absolute;
-        top: 40px;
-        left: 880px;
-        width: 123px;
-        height: 17px;
-        font-size: 14px;
-        line-height: 16px;
-        text-decoration-line: underline;
-        }
-        
-        .mail {
-        position: absolute;
-        top: 40px;
-        right: 115px;
-        width: 178px;
-        text-decoration-line: underline;
-        height: 17px;
-        }
+      &:hover {
+        cursor: pointer;
+        color: #1ab0ce;
+        border-top: 1px solid #1ab0ce;
+      }
     }
+  }
+
+  // .container {
+  //   width: 100%;
+  //   height: 50px;
+
+  //   .navigation {
+  //     position: absolute;
+  //     top: 130px;
+  //     margin-left: 130px;
+  //     text-transform: uppercase;
+
+  //     .product {
+  //       margin-left: 50px;
+
+  //     }
+
+  //     .delivery {
+  //       margin-left: 50px;
+  //     }
+
+  //     .news {
+  //       margin-left: 50px;
+  //     }
+
+  //     .base {
+  //       margin-left: 50px;
+  //     }
+
+  //     .about {
+  //       margin-left: 50px;
+  //       margin-right: 50px;
+  //     }
+  //   }
+
+  //   .search {
+  //     position: absolute;
+  //     top: 120px;
+  //     right: 100px;
+
+  //     .button {
+  //       width: 20px;
+  //       height: 20px;
+
+  //     }
+  //   }
+  // }
+
+  // .logotype {
+  //   color: #3A4047;
+
+  //   .logo {
+  //     position: absolute;
+  //     top: 25px;
+  //     left: 133px;
+  //   }
+
+  //   .name {
+  //     position: absolute;
+  //     top: 20px;
+  //     left: 209px;
+  //     text-transform: uppercase;
+  //     font-size: 48px;
+  //     line-height: 56px;
+  //     color: #1AB0CE;
+  //   }
+
+  //   .typography {
+  //     position: absolute;
+  //     top: 65px;
+  //     left: 212px;
+  //   }
+  // }
+
+  // .content {
+  //   text-align: center;
+  //   width: 391px;
+  //   position: absolute;
+  //   top: 30px;
+  //   left: 421px;
+
+  //   .description {
+  //     font-size: 16px;
+  //     line-height: 19px;
+
+  //   }
+
+  //   .schedule {
+  //     margin-top: 10px;
+  //     font-weight: bold;
+  //     font-size: 14px;
+  //     line-height: 16px;
+  //   }
+  // }
+
+  // .contacts {
+  //   color: #3a4047;
+
+  //   .cart {
+  //     position: absolute;
+  //     right: 51px;
+  //     top: 36px;
+  //   }
+
+  //   .user {
+  //     position: absolute;
+  //     left: 860px;
+  //     top: 40px;
+  //   }
+
+  //   .facebook {
+  //     position: absolute;
+  //     right: 340px;
+  //     top: 80px;
+  //   }
+
+  //   .telephone {
+  //     position: absolute;
+  //     right: 300px;
+  //     top: 80px;
+  //   }
+
+  //   .office {
+  //     position: absolute;
+  //     top: 40px;
+  //     left: 880px;
+  //     width: 123px;
+  //     height: 17px;
+  //     font-size: 14px;
+  //     line-height: 16px;
+  //     text-decoration-line: underline;
+  //   }
+
+  //   .mail {
+  //     position: absolute;
+  //     top: 40px;
+  //     right: 115px;
+  //     width: 178px;
+  //     text-decoration-line: underline;
+  //     height: 17px;
+  //   }
+  // }
 }

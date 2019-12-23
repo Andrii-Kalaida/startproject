@@ -17,6 +17,14 @@ background: url('./images/rectangle.jpg') center / cover no-repeat;
     color: #FFFFFF;
     }
 
+    .border {
+    position: absolute;
+    width: 150px;
+    border-bottom: 2px solid #FFFFFF;
+    top: 240px;
+    margin-left: calc(50% - 75px);
+    }
+
     .description {
     font-size: 24px;
     line-height: 28px;

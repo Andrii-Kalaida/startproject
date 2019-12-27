@@ -4,7 +4,7 @@ width: 100%;
 height: 500px;
 background: url('./images/rectangle.jpg') center / cover no-repeat;
 
-    .title {
+    & > .title {
     
     white-space: nowrap;
     position: absolute;
@@ -17,7 +17,7 @@ background: url('./images/rectangle.jpg') center / cover no-repeat;
     color: #FFFFFF;
     }
 
-    .border {
+    & > .border {
     position: absolute;
     width: 150px;
     border-bottom: 2px solid #FFFFFF;
@@ -25,7 +25,7 @@ background: url('./images/rectangle.jpg') center / cover no-repeat;
     margin-left: calc(50% - 75px);
     }
 
-    .description {
+    & > .description {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -33,7 +33,7 @@ background: url('./images/rectangle.jpg') center / cover no-repeat;
     color: #FFFFFF;
     }
 
-    .button {
+    & > .button {
     display: block;
     position: absolute;
     left: calc(50% - 100px);

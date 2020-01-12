@@ -1,0 +1,61 @@
+.footer-section {
+    position: relative;
+    width: 100%;
+    height: 163px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+
+    & > .brand {
+        
+        & > .logo {
+        padding-left: 77px;
+        height: 62px;
+        background: url('../images/logo-shop.svg') 0 0 / 67px 62px no-repeat;
+
+            & > .name {
+
+            }
+
+            & > .typography {
+
+            }
+        }
+    }
+
+    & > .text {
+
+        & > .description {
+
+        }
+    }
+
+    & > .navigation {
+
+        & > .item {
+
+        }
+    }
+
+    & > .row {
+
+        & > .social {
+
+        }
+
+        & > .phone {
+
+            & > .number {
+
+            }
+
+            & > .arrow {
+
+            }
+
+            & > .list {
+                
+            }
+        }
+    }
+}

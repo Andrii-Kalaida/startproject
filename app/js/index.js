@@ -1,25 +1,26 @@
-function initColorText() {
-  return;
-  const text = document.getElementsByClassName('js-color-text')[0];
+function handlePhoneBox(block) {
+  const button = block.getElementsByClassName('js-arrow')[0];
+  const box = block.getElementsByClassName('js-list')[0];
+  
+  button.addEventListener('click', () => {
+    box.classList.add('-show');
+  });
 
-  const colors = [
-    'orange', // 0
-    'royalblue', // 1
-    'pink', // 2
-    'coral', // 3
-    'yellow' // 4
-  ]
-
-  let index = 0;
-
-  setInterval(function() {
-    text.style = 'color: ' + colors[index];
-    if (index === 4) {
-      index = 0;
-    } else {
-      index++
-    }
-  }, 2000);
+  box.addEventListener('mouseleave', () => {
+    box.classList.remove('-show');
+  });
 }
 
-initColorText();
+function initPhonesBox() {
+  const blockComponents = [...document.getElementsByClassName('js-phones-box-component')];
+
+  if (!blockComponents.length) {
+    return;
+  }
+
+  blockComponents.forEach(block => {
+    handlePhoneBox(block);
+  })
+}
+
+initPhonesBox();

@@ -1,0 +1,22 @@
+/* logo component */
+
+.logo-component {
+  padding-left: 77px;
+  height: 62px;
+  background: url('../images/logo-shop.svg') 0 0 / 67px 62px no-repeat;
+
+  & > .name {
+    font-size: 48px;
+    line-height: 48px;
+    color: #1ab0ce;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  & > .typography {
+    font-size: 15px;
+    line-height: 18px;
+    color: #3a4047;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,82 @@
+/* phones box component */
+
+.phones-box-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &.-footer { 
+    & > .arrow {
+      background: #fff url("../images/chevron-right.svg") center / 8px 4px no-repeat;
+    }
+
+    & > .list {
+      top: auto;
+      bottom: calc(100% + 20px);
+      box-shadow: 0 0 40px 0 #ededed;
+    }
+  }
+
+  & > .number {
+    white-space: nowrap;
+    height: 20px;
+    margin-left: 20px;
+    padding-left: 30px;
+    background: url("../images/telephone.svg") 0 center / 20px no-repeat;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3a4047;
+    font-weight: bold;
+  }
+
+  & > .arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: #ededed url("../images/chevron-right.svg") center / 8px 4px no-repeat;
+    position: relative;
+    border: none;
+  }
+
+  & > .list {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 16px);
+    padding: 30px 30px 17px;
+    box-sizing: border-box;
+    background: #fff;
+    display: none;
+    z-index: 1;
+
+    &.-show {
+      display: block;
+    }
+
+    & > .number {
+      height: 25px;
+      width: 100%;
+      padding-left: 36px;
+      margin-bottom: 13px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3a4047;
+      display: flex;
+      align-items: center;
+      white-space: nowrap; 
+
+      &.-vodafone {
+        background: url('../images/logo_vodafone.svg') left center no-repeat;
+      }
+
+      &.-kyivstar {
+        background: url('../images/logo_kyivstar.svg') left center no-repeat;
+      }
+
+      &.-life {
+        background: url('../images/logo_life.svg') left center no-repeat;
+      }
+    }
+  }
+}

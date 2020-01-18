@@ -49,7 +49,8 @@ gulp.task('browser', async function () {
     server: {
       baseDir: 'public'
     },
-    notify: false
+    notify: false,
+    port: 5001
   })
 });
 

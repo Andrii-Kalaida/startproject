@@ -6,6 +6,10 @@
   justify-content: space-between;
   position: relative;
 
+  & > .facebook {
+    padding-left: 50px;
+  }
+
   &.-footer { 
     & > .arrow {
       background: #fff url("../images/chevron-right.svg") center / 8px 4px no-repeat;

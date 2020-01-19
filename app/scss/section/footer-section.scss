@@ -47,22 +47,31 @@
   }
 
   & > .contacts {
-    // some styles
+    color: #3A4047;
+
+    & > .firm {
+      margin-top: 20px;
+
+      & > .item {
+        position: absolute;
+        top: 60px;
+        right: 90px;
+      }
+
+      & > .glanec {
+        position: absolute;
+        top: 117px;
+        right: 272px;
+      }
+      
+      & > .development {
+        text-transform: uppercase;
+        margin-top: 76px;
+        margin-left: 58px;
+        white-space: nowrap;
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
   }
-
-  // & > .row {
-  //   & > .social {
-  //   }
-
-  //   & > .phone {
-  //     & > .number {
-  //     }
-
-  //     & > .arrow {
-  //     }
-
-  //     & > .list {
-  //     }
-  //   }
-  // }
 }

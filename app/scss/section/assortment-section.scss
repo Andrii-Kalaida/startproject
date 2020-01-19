@@ -52,9 +52,9 @@
         position: relative;
         background: #ffffff;
         border: 1px solid #DCE1E6;
-        box-sizing: border-box;
         width: 370px;
         height: 291px;
+        
 
             & > .newspaper {
             margin: 25px 0px 0px 25px;
@@ -70,12 +70,16 @@
 
             & > .list {
             margin-left: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            
 
                 & > .item {
                 margin-top: 15px;
                 font-size: 14px;
                 line-height: 16px;
                 color: #3A4047;
+                flex-basis: 50%;
                 }
             }
         }

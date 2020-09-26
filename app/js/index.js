@@ -23,4 +23,26 @@ function initPhonesBox() {
   })
 }
 
-initPhonesBox();
+
+// search
+function handleSearch() {
+  const search = document.getElementsByClassName('js-search')[0];
+  const input = document.getElementsByClassName('js-search-input')[0];
+  const activeClass = 'navigation__search--active';
+
+  input.addEventListener('focus', () => {
+    search.classList.add(activeClass);
+  });
+
+  input.addEventListener('blur', (e) => {
+    if (!e.target.value) {
+      search.classList.remove(activeClass);
+    }
+  });
+}
+//search end
+
+window.addEventListener('load', () => {
+  initPhonesBox();
+  handleSearch();
+})

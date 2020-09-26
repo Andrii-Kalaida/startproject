@@ -107,16 +107,15 @@
   }
 
   .navigation {
-    height: 57px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     & > .item {
-      height: 100%;
+      padding: 20px 0;
       flex-grow: 1;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 12px;
+      line-height: 16px;
       font-weight: bold;
       text-transform: uppercase;
       display: flex;
@@ -124,6 +123,7 @@
       justify-content: center;
       color: #3a4047;
       text-decoration: none;
+      border-top: 1px solid transparent;
 
       &:hover {
         cursor: pointer;
@@ -131,146 +131,45 @@
         border-top: 1px solid #1ab0ce;
       }
     }
+
+    &__search {
+      width: 150px;
+      position: relative;
+      flex-grow: 1;
+
+      &::before {
+        z-index: 0;
+        content: '';
+        height: 24px;
+        width: 24px;
+        display: block;
+        position: absolute;
+        background: url("../images/icon-search.svg");
+        top: 3px;
+        left: 3px;
+        transition: left 0.1s linear;
+      }
+
+      &--active {
+        border-bottom: 1px solid black;
+        &::before {
+          left: calc(100% - 27px);
+        }
+      }
+    }
+
+    &__search-input {
+      padding: 2px 30px 2px 2px;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 30px;
+      border: 0;
+      background: transparent;
+      color: black;
+      font-size: 12px;
+      line-height: 18px;
+      outline: none;
+    }
   }
-
-  // .container {
-  //   width: 100%;
-  //   height: 50px;
-
-  //   .navigation {
-  //     position: absolute;
-  //     top: 130px;
-  //     margin-left: 130px;
-  //     text-transform: uppercase;
-
-  //     .product {
-  //       margin-left: 50px;
-
-  //     }
-
-  //     .delivery {
-  //       margin-left: 50px;
-  //     }
-
-  //     .news {
-  //       margin-left: 50px;
-  //     }
-
-  //     .base {
-  //       margin-left: 50px;
-  //     }
-
-  //     .about {
-  //       margin-left: 50px;
-  //       margin-right: 50px;
-  //     }
-  //   }
-
-  //   .search {
-  //     position: absolute;
-  //     top: 120px;
-  //     right: 100px;
-
-  //     .button {
-  //       width: 20px;
-  //       height: 20px;
-
-  //     }
-  //   }
-  // }
-
-  // .logotype {
-  //   color: #3A4047;
-
-  //   .logo {
-  //     position: absolute;
-  //     top: 25px;
-  //     left: 133px;
-  //   }
-
-  //   .name {
-  //     position: absolute;
-  //     top: 20px;
-  //     left: 209px;
-  //     text-transform: uppercase;
-  //     font-size: 48px;
-  //     line-height: 56px;
-  //     color: #1AB0CE;
-  //   }
-
-  //   .typography {
-  //     position: absolute;
-  //     top: 65px;
-  //     left: 212px;
-  //   }
-  // }
-
-  // .content {
-  //   text-align: center;
-  //   width: 391px;
-  //   position: absolute;
-  //   top: 30px;
-  //   left: 421px;
-
-  //   .description {
-  //     font-size: 16px;
-  //     line-height: 19px;
-
-  //   }
-
-  //   .schedule {
-  //     margin-top: 10px;
-  //     font-weight: bold;
-  //     font-size: 14px;
-  //     line-height: 16px;
-  //   }
-  // }
-
-  // .contacts {
-  //   color: #3a4047;
-
-  //   .cart {
-  //     position: absolute;
-  //     right: 51px;
-  //     top: 36px;
-  //   }
-
-  //   .user {
-  //     position: absolute;
-  //     left: 860px;
-  //     top: 40px;
-  //   }
-
-  //   .facebook {
-  //     position: absolute;
-  //     right: 340px;
-  //     top: 80px;
-  //   }
-
-  //   .telephone {
-  //     position: absolute;
-  //     right: 300px;
-  //     top: 80px;
-  //   }
-
-  //   .office {
-  //     position: absolute;
-  //     top: 40px;
-  //     left: 880px;
-  //     width: 123px;
-  //     height: 17px;
-  //     font-size: 14px;
-  //     line-height: 16px;
-  //     text-decoration-line: underline;
-  //   }
-
-  //   .mail {
-  //     position: absolute;
-  //     top: 40px;
-  //     right: 115px;
-  //     width: 178px;
-  //     text-decoration-line: underline;
-  //     height: 17px;
-  //   }
-  // }
 }
